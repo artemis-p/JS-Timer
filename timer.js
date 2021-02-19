@@ -6,7 +6,7 @@ let displaySeconds;
 let displayMinutes;
 let displayHours;
 
-let timer = 0;
+let timer;
 
 // function start() {
 //     $(".start-button").click(function () {
@@ -20,22 +20,20 @@ $(".start-button").click(function () {
     $(".start-button").off("click");
 });
 
-$(".pause-button").click(function () {
+$(".stop-button").click(function () {
     timer = clearInterval(timer);
-    // timer = setInterval(timerHandle, 1000);
-    // $(".pause-button").off("click");
+    // $(".stop-button").off("click");
 
     // add an if/else = > if the pause button is clicked then add the class paused and clearInterval, and when clicked again it should start the setInterval
 });
 
-$(".stop-button").click(function () {
-    timer = clearInterval(timer);
-    // timer = setInterval(timerHandle, 1000);
-    $(".stop-button").off("click");
+$(".reset-button").click(function () {
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    timer = $("#timer").text("00:00:00");
+    timer = setInterval(timerHandle, 1000);
 });
-
-
-
 
 
 function timerHandle() {
@@ -51,7 +49,6 @@ function timerHandle() {
     }
 
     timerDisplay();
-    // console.log(hours + "." + minutes + "." +seconds)
 }
 
 function timerDisplay(){
