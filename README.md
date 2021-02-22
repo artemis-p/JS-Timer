@@ -11,4 +11,5 @@ A simple timer to keep on practising with JS functions, jQuery and Bootstrap. Th
 - CSS
 
 ## Next steps
-&#9744; Add functionality in the buttons
+- [x] Add basic functionality to the buttons <br>
+- [ ] Fix reset button so it doesn't start counting once clicked
