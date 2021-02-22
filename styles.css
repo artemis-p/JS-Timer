@@ -16,10 +16,8 @@ body {
 }
 
 .btn {
-    /* display: inline-block; */
-    /* margin: 5% 2% 5% 2%;
-    padding: 1% 3%; */
-    padding: 15px 30px 16px;
+    margin: 5% 2% 5% 2%;
+    padding: 1% 2.5%;
     font-size: 1.7rem;
     color: #393e46;
 }
@@ -31,7 +29,6 @@ body {
     }
 }
     
-
 .start-button {
     background-color: #0fe98e;
     border: #0fe98e;
